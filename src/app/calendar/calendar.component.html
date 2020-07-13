@@ -1,0 +1,41 @@
+<div class="header">
+    <p>calendar works!</p>
+    <p><button (click)="layOutDay([ {start: 30, end: 150}, {start: 540, end: 600}, {start: 560, end: 620}, {start: 610, end: 670} ])">Test layOutDay() </button></p>
+    <p><button (click)="clean()">clean</button></p>
+    <p><button (click)="layOutDay(calendarInput.value); calendarInput.value='' ">Test layOutDay() by inserting its arguments here:</button>
+        <input #calendarInput (keyup.enter)="layOutDay(calendarInput.value); calendarInput.value='' ">
+    </p>
+</div>
+<ol>
+    <li><span class="hour">9:00</span> AM</li>
+    <li>9:30</li>
+    <li><span class="hour">10:00</span> AM</li>
+    <li>10:30</li>
+    <li><span class="hour">11:00</span> AM</li>
+    <li>11:30</li>
+    <li><span class="hour">12:00</span> PM</li>
+    <li>12:30</li>
+    <li><span class="hour">01:00</span> PM</li>
+    <li>01:30</li>
+    <li><span class="hour">02:00</span> PM</li>
+    <li>02:30</li>
+    <li><span class="hour">03:00</span> PM</li>
+    <li>03:30</li>
+    <li><span class="hour">04:00</span> PM</li>
+    <li>04:30</li>
+    <li><span class="hour">05:00</span> PM</li>
+    <li>05:30</li>
+    <li><span class="hour">06:00</span> PM</li>
+    <li>06:30</li>
+    <li><span class="hour">07:00</span> PM</li>
+    <li>07:30</li>
+    <li><span class="hour">08:00</span> PM</li>
+    <li>08:30</li>
+    <li><span class="hour">09:00</span> PM</li>
+</ol>
+<div id="cal-event-container" class="cal-event-container">
+    <div class="cal-event" *ngFor="let entry of entriesArr; let i = index" [style]="entry.style">
+        <span class="evt-txt">Sample item </span>
+        <span class="evt-inner-txt"> Sample location</span>
+    </div>
+</div>
