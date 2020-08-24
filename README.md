@@ -2,7 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
 
-It creates a day calendar app, with no blocks overlapping any other, with given inputs in object format, such as: [ {start: 30, end: 150}, {start: 540, end: 600}, {start: 560, end: 620}, {start: 610, end: 670} ];
+It creates a day calendar app, with no blocks overlapping any other, with given inputs in object format, such as:
+`[ {start: 30, end: 150}, {start: 540, end: 600}, {start: 560, end: 620}, {start: 610, end: 670} ];`
 
 ## Development server
 
